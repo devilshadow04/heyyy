@@ -1,0 +1,58 @@
+- try and except
+
+- ord(): chuyển chữ sang hệ si
+
+-
+b = “platinum”
+a = 5
+s = “%s is one of %d shiny metals” % (b,a)
+
+%s    String
+%c    Character
+%d    Decimal (int)         %o    Octal (int)
+%i    Integer
+%f    Float
+
+- làm tròn số: "{:.2f}".format(a): Làm tròn 2 chữ số sau dấu thập phân
+
+- split() --> trả lại danh sách của chuỗi sau khi chia các chuỗi này dựa vào các dấu phân tách đã cho
+- map(function, iterable) --> duyệt tất cả các phần tử của iterable qua function và
+                              trả về một list kết quả sau khi thực thi.
+
+- open(file, mode)
+'r': Read - Default value. Opens a file for reading, error if the file does not exist
+'w': Write - Opens a file for writing, creates the file if it does not exist
+
+- strip(): trả về một bản sao của chuỗi ban đầu trong đó tất cả ký tự được cung cấp bị xóa từ phần đầu và
+phần cuối của chuỗi (các ký tự bị xóa mặc định là khoảng trống trắng).
+
+str1 = "    Vi du ham Python strip()    "
+print (str1.strip())                      ---> Vi du ham Python strip()
+
+str1 = "----Vi du ham Python strip()----"
+print (str1.strip('-'))                   ---> Vi du ham Python strip()
+
+str1 = "----Vi du ham Python strip()===="
+print (str1.strip('-='))                  ---> Vi du ham Python strip()
+
+- readline() đọc cả một dòng từ file đó.
+
+▪ del(L[index]): delete element at a specific index
+▪ L.pop(): remove element at end of list
+▪ L.remove(element): remove a specific element
+
+▪ list(s): convert string to list, returns a list with every character from s an element in L
+▪ s.split(): split a string on a character parameter, splits on spaces if called without a parameter
+▪ ''.join(L): turn a list of characters into a string, can give a character in quotes to add char between
+every element
+
+s = "I<3 cs"            → s is a string
+list(s)                 → returns ['I','<','3',' ','c','s']
+s.split('<')            → returns ['I', '3 cs']
+L = ['a','b','c']       → L is a list
+''.join(L)              → returns "abc"
+'_'.join(L)             → returns "a_b_c"
+
+print(f"Price of {total_orange} orange is ${total_price:.2f}")
+
+
